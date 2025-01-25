@@ -7,9 +7,41 @@ h1 {
     padding-left: 15px;
     padding-right: 15px;
     margin: 0 auto;
+    overflow: hidden;
 }
 
 body {
     background-color: #0e798e;
     color: #d7dcdd;
+}
+
+.list {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 24px;
+    gap: 32px;
+}
+.item {
+    margin-bottom: 8px;
+    padding: 8px;
+    border: 1px solid #000;
+    border-radius: 4px;
+    background-color: inherit;
+}
+
+.item::marker {
+    color: rgb(20, 6, 207);
+    font-weight: bold;
+}
+
+/* ============= */
+
+.container-test {
+    text-align: center;
+}
+
+.container-test__title {
+    color: yellowgreen;
+    text-transform: uppercase;
+    accent-color: #10bd07;
 }
