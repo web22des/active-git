@@ -1,7 +1,12 @@
-const titleUser = document.querySelector(".js-title");
+// Создать именованную функцию с двумя параметрами, второй по умолчанию
+// переписать функцию, используя синтатксис анонимных функциональных выражений
+// переписать функцию, используя синтаксис стрелочной функции
 
-console.log(titleUser);
+function myfn() {
+    b = 35;
+}
+myfn();
 
-titleUser.style.color = "red";
+const num = myfn.b;
 
-console.log(titleUser.style);
+console.log(num);
