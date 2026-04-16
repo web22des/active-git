@@ -2,11 +2,15 @@
 // переписать функцию, используя синтатксис анонимных функциональных выражений
 // переписать функцию, используя синтаксис стрелочной функции
 
-function myfn() {
-    b = 35;
+let a = 7;
+
+let b = 8;
+
+let c;
+
+function myFn(a, b) {
+    return (c = a + b);
 }
-myfn();
+console.log(c);
 
-const num = myfn.b;
-
-console.log(num);
+myFn();
