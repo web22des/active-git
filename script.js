@@ -6,11 +6,6 @@ let a = 7;
 
 let b = 8;
 
-let c;
+let c = 4;
 
-function myFn(a, b) {
-    return (c = a + b);
-}
-console.log(c);
-
-myFn();
+console.log(a);
