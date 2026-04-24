@@ -1,3 +1,7 @@
+ul {
+    list-style: none;
+}
+
 h1,
 h2 {
     text-align: center;
@@ -14,4 +18,24 @@ h2 {
 body {
     background-color: #0e798e;
     color: #d7dcdd;
+}
+
+.header {
+}
+
+.header__nav {
+    border: 1px solid #000;
+    ul {
+        display: flex;
+        justify-content: center;
+        gap: 24px;
+        a {
+            color: #d7dcdd;
+            transition: all cubic-bezier(0.755, 0.05, 0.855, 0.06);
+            text-decoration: none;
+        }
+        a:hover {
+            color: #8dc9d4;
+        }
+    }
 }

@@ -10,9 +10,21 @@
 //2. Укажите количество рабочих часов в дне (8, 7, 6 или 5 часов в день)
 //3. Стоимость рабочего часа
 
-let workWeeks = Math.floor(25 / 7); // узнаем сколько полных рабочих недель
+const workWick = 5; // Рабочая неделя дней
+const workingHoursPerDay = 5; // количество рабочих часов в рабочем дне.
+const costPerHourOfWork = 80; // Стоимость часа работы
+const timeForTheProject = 40; // Время на проект в часах
 
-let xdf = 25 - workWeeks * 2; //
+const dayStart = new Date();
+const dayFinish = new Date("2026-05-12");
 
-console.log(workWeeks);
-console.log(`всего ${xdf} рабочих дней`);
+// 1. Нужно
+
+// let workWeeks = Math.floor(daysWorks / 7); // узнаем сколько полных рабочих недель
+
+// let xdf = 25 - workWeeks * 2; //
+
+// console.log(workWeeks);
+// console.log(`всего ${xdf} рабочих дней`);
+
+console.log(dayFinish - dayStart);
