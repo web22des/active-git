@@ -13,10 +13,7 @@
 const workWick = 5; // Рабочая неделя дней
 const workingHoursPerDay = 5; // количество рабочих часов в рабочем дне.
 const costPerHourOfWork = 80; // Стоимость часа работы
-const timeForTheProject = 40; // Время на проект в часах
-
-const dayStart = new Date();
-const dayFinish = new Date("2026-05-12");
+const timeForTheProject = 10; // Время на проект в часах
 
 // 1. Нужно
 
@@ -27,4 +24,13 @@ const dayFinish = new Date("2026-05-12");
 // console.log(workWeeks);
 // console.log(`всего ${xdf} рабочих дней`);
 
-console.log(dayFinish - dayStart);
+function myFn(a) {
+    console.log("Start function myFn");
+    let info = Math.floor(a / 7);
+    info = info * 2;
+    result = a - info;
+    console.log(result);
+}
+
+myFn(timeForTheProject);
+console.log("finish");
