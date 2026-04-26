@@ -1,5 +1,63 @@
+:root {
+    --color-primary: #110e71;
+    --color-primary-hover: #1d4ed8;
+    --color-secondary: #6b7280;
+    --color-success: #10b981;
+    --color-warning: #f59e0b;
+    --color-danger: #ef4444;
+    --color-info: #3b82f6;
+    /* Цвета фона */
+    --color-bg-primary: #0e798e;
+    --color-bg-secondary: #1090aa;
+    --color-bg-tertiary: #f3f4f6;
+    --color-bg-dark: #042127;
+
+    --color-text-primary: #d7dcdd;
+    --color-text-primary-hv: #e6f4f7;
+    --color-text-on-primary: #1f2324;
+
+    /* Отступы */
+
+    --space-xxs: 4px;
+    --space-xs: 8px;
+    --space-sm: 12px;
+    --space-md: 16px;
+    --space-lg: 24px;
+    --space-xl: 32px;
+    --space-xxl: 48px;
+    --space-xxxl: 64px;
+
+    /* letter-spacing */
+    --letter-spacing-none: 0em; /* Без интервала */
+    --letter-spacing-sm: 0.025em; /* Малое увеличение */
+    --letter-spacing-md: 0.05em; /* Среднее увеличение */
+    --letter-spacing-lg: 0.1em; /* Большое увеличение */
+    --letter-spacing-xl: 0.15em; /* Экстра большое увеличение */
+    --letter-spacing-negative-sm: -0.02em; /* Малое уменьшение */
+    --letter-spacing-negative-md: -0.05em; /* Среднее уменьшение */
+}
+
+/* Сброс базовых отступов, чтобы контейнер занимал всю высоту */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 ul {
     list-style: none;
+}
+
+h1 {
+    margin-bottom: var(--space-md);
+}
+
+h2 {
+    margin-bottom: var(--space-sm);
+}
+
+h3 {
+    margin-bottom: var(--space-xs);
 }
 
 h1,
@@ -16,26 +74,54 @@ h2 {
 }
 
 body {
-    background-color: #0e798e;
-    color: #d7dcdd;
+    height: 100vh; /* Задаем высоту окна просмотра */
+    background-color: var(--color-bg-primary);
+    color: var(--color-text-primary);
+    font-size: 18px;
+    letter-spacing: var(--letter-spacing-md);
+    margin: 0;
 }
 
 .header {
+    background-color: var(--color-bg-dark);
+    margin-bottom: var(--space-lg);
+    padding-top: var(--space-sm);
+    padding-bottom: var(--space-sm);
 }
 
 .header__nav {
     border: 1px solid #000;
     ul {
         display: flex;
-        justify-content: center;
+
         gap: 24px;
         a {
-            color: #d7dcdd;
+            color: var(--color-text-primary);
             transition: all cubic-bezier(0.755, 0.05, 0.855, 0.06);
             text-decoration: none;
         }
         a:hover {
-            color: #8dc9d4;
+            color: var(--color-text-primary-hv);
         }
     }
+}
+
+.footer {
+    padding-top: var(--space-lg);
+    padding-bottom: var(--space-lg);
+    background-color: var(--color-bg-dark);
+    text-align: center;
+    p {
+        font-size: 12px;
+    }
+}
+
+.pages {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+
+    min-height: 100%;
+}
+
+.main {
 }

@@ -8,67 +8,52 @@
         <title>Активность</title>
     </head>
     <body>
-        <header class="header container">
-            <nav class="header__nav">
-                <ul>
-                    <li><a href="">Link</a></li>
-                    <li><a href="">Link</a></li>
-                    <li><a href="">Link</a></li>
-                </ul>
-            </nav>
+        <header class="header">
+            <div class="container">
+                <nav class="header__nav">
+                    <ul>
+                        <li><a href="./tasks/tasks.html">Задачи JavaScript</a></li>
+                        <li><a href="./count.html">Счетчик</a></li>
+                        <li><a href="">Контакты</a></li>
+                    </ul>
+                </nav>
+            </div>
         </header>
-        <h1>Счетчик активности</h1>
-        <div class="container">
-            <ol class="list" id="changeStyleButton">
-                <li class="item">Правка от 01/04/2026</li>
-                <li class="item">Правка от 02/04/2026</li>
-                <li class="item">Правка от 03/04/2026</li>
-                <li class="item">Правка от 05/04/2026</li>
-                <li class="item">Правка от 06/04/2026</li>
-                <li class="item">Правка от 07/04/2026</li>
-                <li class="item">Правка от 08/04/2026</li>
-                <li class="item">Правка от 09/04/2026</li>
-                <li class="item">Правка от 10/04/2026</li>
-                <li class="item">Правка от 11/04/2026</li>
-                <li class="item">Правка от 12/04/2026</li>
-                <li class="item">Правка от 13/04/2026</li>
-                <li class="item">Правка от 14/04/2026</li>
-                <li class="item">Правка от 15/04/2026</li>
-                <li class="item">Правка от 16/04/2026</li>
-                <li class="item">Правка от 17/04/2026</li>
-                <li class="item">Правка от 18/04/2026</li>
-                <li class="item">Правка от 19/04/2026</li>
-                <li class="item">Правка от 22/04/2026</li>
-                <li class="item">Правка от 23/04/2026</li>
-                <li class="item">Правка от 24/04/2026</li>
-                <li class="item">Правка от 25/04/2026</li>
-            </ol>
+        <div class="main">
+            <h1>Главная страница</h1>
+            <div class="container">
+                <div class="useful">
+                    <h2 class="useful__title">Полезные ссылки <strong>GitHub</strong></h2>
+                    <ol class="useful__list">
+                        <li class="useful__item"><a class="useful__link" href="https://github.com/luongnv89/claude-howto" target="_blank"> luongnv89/claude-howto</a>Визуальное руководство по Claude Code, основанное на примерах, - от базовых концепций до сложных агентов, с шаблонами, которые можно скопировать и вставить, чтобы сразу же получить пользу.</li>
+                        <li class="useful__item"><a class="useful__link" href="https://github.com/JCodesMore/ai-website-cloner-template" target="_blank">JCodesMore/ai-website-cloner-template</a>Клонируйте любой веб-сайт одной командой, используя агентов искусственного интеллекта.</li>
+                        <li class="useful__item">
+                            <a class="useful__link" href="https://github.com/chenglou/pretext?tab=readme-ov-file" target="_blank">Pretext</a>
+                            Библиотека на чистом JavaScript/TypeScript для измерения и компоновки многострочного текста. Быстрая, точная и поддерживает все языки, о которых вы даже не подозревали. Позволяет отображать данные в DOM, Canvas, SVG, а в скором времени и на стороне сервера. Pretext обходит необходимость в измерениях DOM (например, getBoundingClientRect, offsetHeight), которые запускают перерисовку макета - одну из самых ресурсоемких операций в браузере. Он реализует собственную логику измерения текста, используя собственный шрифтовой движок браузера в качестве эталона (очень удобный для ИИ метод итерации).
+                        </li>
+                        <li class="useful__item"><a class="useful__link" href="https://github.com/microsoft/VibeVoice" target="_blank">VibeVoice</a>VibeVoice - это семейство передовых моделей голосового искусственного интеллекта с открытым исходным кодом , включающее как модели преобразования текста в речь (TTS), так и модели автоматического распознавания речи (ASR).</li>
+                        <li class="useful__item"><a class="useful__link" href="https://github.com/sherlock-project/sherlock" target="_blank">sherlock</a>Поиск аккаунтов в социальных сетях по имени пользователя.</li>
+                        <li class="useful__item"><a class="useful__link" href="https://github.com/NousResearch/hermes-agent" target="_blank">hermes-agent</a>Самосовершенствующийся ИИ-агент, разработанный Nous Research . Это единственный агент со встроенным циклом обучения - он создает навыки на основе опыта, улучшает их в процессе использования, подталкивает себя к сохранению знаний, анализирует собственные прошлые разговоры и строит углубленную модель вашей личности на протяжении нескольких сессий. Запустите его на VPS за 5 долларов, кластере GPU или бессерверной инфраструктуре, которая практически ничего не стоит в режиме ожидания. Он не привязан к вашему ноутбуку - общайтесь с ним из Telegram, пока он работает на облачной виртуальной машине.</li>
+                        <li class="useful__item"><a class="useful__link" href="https://github.com/freeCodeCamp/freeCodeCamp" target="_blank">freeCodeCamp</a>Открытый исходный код и учебная программа freeCodeCamp.org. Изучайте математику, программирование и информатику бесплатно.</li>
+                        <li class="useful__item"><a class="useful__link" href="https://github.com/mldangelo/personal-site" target="_blank">personal-site</a>Бесплатный шаблон сайта-портфолио с открытым исходным кодом, созданный с использованием Next.js , React , TypeScript и Tailwind CSS . Сделайте форк и адаптируйте его под себя менее чем за час.</li>
+                        <li class="useful__item"><a class="useful__link" href="https://github.com/anthropics/claude-code" target="_blank">Claude Code</a>- это инструмент для автоматического написания кода, который работает в вашем терминале, понимает вашу кодовую базу и помогает вам писать код быстрее, выполняя рутинные задачи, объясняя сложный код и обрабатывая рабочие процессы Git - всё это с помощью команд на естественном языке. Используйте его в терминале, IDE или отметьте @claude на Github.</li>
+                        <li class="useful__item"><a class="useful__link" href="https://github.com/parcel-bundler/awesome-parcel" target="_blank">Awesome Parcel</a>Parcel - очень быстрый бандлер, не требующий настройки</li>
+                        <li class="useful__item"><a class="useful__link" href="https://github.com/igareck/vpn-configs-for-russia" target="_blank">vpn-configs-for-russia</a>Бесплатные VPN-конфигурации, работающие в РФ</li>
+                        <li class="useful__item"><a class="useful__link" href="https://github.com/topics/free-vpn-russia" target="_blank">Topic - Free VPN</a>16 общедоступных репозиториев, соответствующих теме - Бесплатные VPN-конфигурации</li>
+                        <li class="useful__item"><a class="useful__link" href="#" target="_blank"></a></li>
+                        <li class="useful__item"><a class="useful__link" href="#" target="_blank"></a></li>
+                    </ol>
+                </div>
+            </div>
+            <div class="container container-test">
+                <h2 class="container-test__title js-title">Далеко-далеко за словесными горами в стране, гласных и согласных.</h2>
+            </div>
         </div>
-        <div class="useful container">
-            <h2 class="useful__title">Полезные ссылки <strong>GitHub</strong></h2>
-            <ol class="useful__list">
-                <li class="useful__item"><a class="useful__link" href="https://github.com/luongnv89/claude-howto" target="_blank"> luongnv89/claude-howto</a>Визуальное руководство по Claude Code, основанное на примерах, - от базовых концепций до сложных агентов, с шаблонами, которые можно скопировать и вставить, чтобы сразу же получить пользу.</li>
-                <li class="useful__item"><a class="useful__link" href="https://github.com/JCodesMore/ai-website-cloner-template" target="_blank">JCodesMore/ai-website-cloner-template</a>Клонируйте любой веб-сайт одной командой, используя агентов искусственного интеллекта.</li>
-                <li class="useful__item">
-                    <a class="useful__link" href="https://github.com/chenglou/pretext?tab=readme-ov-file" target="_blank">Pretext</a>
-                    Библиотека на чистом JavaScript/TypeScript для измерения и компоновки многострочного текста. Быстрая, точная и поддерживает все языки, о которых вы даже не подозревали. Позволяет отображать данные в DOM, Canvas, SVG, а в скором времени и на стороне сервера. Pretext обходит необходимость в измерениях DOM (например, getBoundingClientRect, offsetHeight), которые запускают перерисовку макета - одну из самых ресурсоемких операций в браузере. Он реализует собственную логику измерения текста, используя собственный шрифтовой движок браузера в качестве эталона (очень удобный для ИИ метод итерации).
-                </li>
-                <li class="useful__item"><a class="useful__link" href="https://github.com/microsoft/VibeVoice" target="_blank">VibeVoice</a>VibeVoice - это семейство передовых моделей голосового искусственного интеллекта с открытым исходным кодом , включающее как модели преобразования текста в речь (TTS), так и модели автоматического распознавания речи (ASR).</li>
-                <li class="useful__item"><a class="useful__link" href="https://github.com/sherlock-project/sherlock" target="_blank">sherlock</a>Поиск аккаунтов в социальных сетях по имени пользователя.</li>
-                <li class="useful__item"><a class="useful__link" href="https://github.com/NousResearch/hermes-agent" target="_blank">hermes-agent</a>Самосовершенствующийся ИИ-агент, разработанный Nous Research . Это единственный агент со встроенным циклом обучения - он создает навыки на основе опыта, улучшает их в процессе использования, подталкивает себя к сохранению знаний, анализирует собственные прошлые разговоры и строит углубленную модель вашей личности на протяжении нескольких сессий. Запустите его на VPS за 5 долларов, кластере GPU или бессерверной инфраструктуре, которая практически ничего не стоит в режиме ожидания. Он не привязан к вашему ноутбуку - общайтесь с ним из Telegram, пока он работает на облачной виртуальной машине.</li>
-                <li class="useful__item"><a class="useful__link" href="https://github.com/freeCodeCamp/freeCodeCamp" target="_blank">freeCodeCamp</a>Открытый исходный код и учебная программа freeCodeCamp.org. Изучайте математику, программирование и информатику бесплатно.</li>
-                <li class="useful__item"><a class="useful__link" href="https://github.com/mldangelo/personal-site" target="_blank">personal-site</a>Бесплатный шаблон сайта-портфолио с открытым исходным кодом, созданный с использованием Next.js , React , TypeScript и Tailwind CSS . Сделайте форк и адаптируйте его под себя менее чем за час.</li>
-                <li class="useful__item"><a class="useful__link" href="https://github.com/anthropics/claude-code" target="_blank">Claude Code</a>- это инструмент для автоматического написания кода, который работает в вашем терминале, понимает вашу кодовую базу и помогает вам писать код быстрее, выполняя рутинные задачи, объясняя сложный код и обрабатывая рабочие процессы Git - всё это с помощью команд на естественном языке. Используйте его в терминале, IDE или отметьте @claude на Github.</li>
-                <li class="useful__item"><a class="useful__link" href="https://github.com/parcel-bundler/awesome-parcel" target="_blank">Awesome Parcel</a>Parcel - очень быстрый бандлер, не требующий настройки</li>
-                <li class="useful__item"><a class="useful__link" href="https://github.com/igareck/vpn-configs-for-russia" target="_blank">vpn-configs-for-russia</a>Бесплатные VPN-конфигурации, работающие в РФ</li>
-                <li class="useful__item"><a class="useful__link" href="https://github.com/topics/free-vpn-russia" target="_blank">Topic - Free VPN</a>16 общедоступных репозиториев, соответствующих теме - Бесплатные VPN-конфигурации</li>
-                <li class="useful__item"><a class="useful__link" href="#" target="_blank"></a></li>
-                <li class="useful__item"><a class="useful__link" href="#" target="_blank"></a></li>
-            </ol>
+        <div class="footer">
+            <div class="container">
+                <p>Только для частного использования</p>
+            </div>
         </div>
-        <div class="container container-test">
-            <h2 class="container-test__title js-title">Далеко-далеко за словесными горами в стране, гласных и согласных.</h2>
-        </div>
-        <script src="./pazl-01.js"></script>
+        <script src="./script.js"></script>
     </body>
 </html>
