@@ -1,3 +1,5 @@
+@import "./button.css";
+
 :root {
     --color-primary: #110e71;
     --color-primary-hover: #1d4ed8;
@@ -69,7 +71,9 @@ h2 {
     max-width: 1230px;
     padding-left: 15px;
     padding-right: 15px;
-    margin: 0 auto;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: var(--space-xxl);
     overflow: hidden;
 }
 

@@ -1,0 +1,43 @@
+button {
+    background-color: transparent;
+    background-image: none;
+    border: none;
+    padding: 0;
+    margin: 0;
+    font: inherit;
+    color: inherit;
+    cursor: pointer;
+    text-transform: none;
+    -webkit-appearance: button;
+    appearance: button;
+}
+
+/* Убираем синюю рамку на мобильных Safari */
+button:active {
+    opacity: 1;
+}
+
+/* Убираем стандартные стили при нажатии на мобильных */
+button {
+    -webkit-tap-highlight-color: transparent;
+}
+
+/* ================================= */
+
+.button {
+    border-radius: var(--space-xs);
+    transition: background-color ease-in 0.3s;
+}
+
+.button--md {
+    padding: var(--space-xxs) var(--space-sm);
+}
+
+.button--primary {
+    background-color: var(--color-primary);
+    color: var(--color-text-primary);
+}
+
+.button--primary:hover {
+    background-color: var(--color-primary-hover);
+}

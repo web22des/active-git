@@ -10,27 +10,31 @@
 //2. Укажите количество рабочих часов в дне (8, 7, 6 или 5 часов в день)
 //3. Стоимость рабочего часа
 
-const workWick = 5; // Рабочая неделя дней
+let workWick = 5; // Рабочая неделя дней
 const workingHoursPerDay = 5; // количество рабочих часов в рабочем дне.
 const costPerHourOfWork = 80; // Стоимость часа работы
-const timeForTheProject = 10; // Время на проект в часах
+const timeForTheProject = 14; // Время на проект в часах
 
 // 1. Нужно
 
 // let workWeeks = Math.floor(daysWorks / 7); // узнаем сколько полных рабочих недель
 
-// let xdf = 25 - workWeeks * 2; //
-
-// console.log(workWeeks);
-// console.log(`всего ${xdf} рабочих дней`);
-
 function myFn(a) {
-    console.log("Start function myFn");
+    console.log("Успешный запуск функции myFn");
     let info = Math.floor(a / 7);
     info = info * 2;
-    result = a - info;
-    console.log(result);
+    return a - info;
 }
 
-myFn(timeForTheProject);
-console.log("finish");
+const jsButton = document.getElementById("idButton");
+const jsWorkDays = document.getElementById("idWorkDays");
+
+const jsTestSel = document.getElementById("idTestSel");
+workWick = jsTestSel; // переменная в зависимости от выбора селект
+
+jsButton.addEventListener("click", function () {
+    console.log("Запуск расчета начат");
+    const resultMyFn = myFn(timeForTheProject);
+    console.log(resultMyFn);
+    jsWorkDays.textContent = `Количество рабочих дней - ${resultMyFn}`;
+});
