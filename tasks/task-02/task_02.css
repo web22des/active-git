@@ -1,0 +1,57 @@
+/*  */
+
+.task-02__traffic-light {
+    border: 1px solid #000;
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    max-width: fit-content;
+    border-radius: 16px;
+    background-color: gray;
+    margin-bottom: 24px;
+}
+
+.task-02__box {
+    width: 150px;
+    height: 150px;
+    border: 1px solid #000;
+    border-radius: 50%;
+    opacity: 0.2;
+}
+
+.task-02__box._active {
+    opacity: 1;
+}
+
+.task-02__box--red {
+    background-color: red;
+}
+
+.task-02__box--yellow {
+    background-color: yellow;
+}
+
+.task-02__box--green {
+    background-color: green;
+}
+.button__wrapper {
+}
+.button {
+    padding: 12px 24px;
+    border-radius: 16px;
+    border-style: solid;
+    border-width: 2px;
+    border-color: wheat;
+}
+
+.button--red {
+    background-color: red;
+}
+
+.button--yellow {
+    background-color: yellow;
+}
+.button--green {
+    background-color: green;
+}
