@@ -1,22 +1,28 @@
 @import "./button.css";
 
 :root {
-    --color-primary: #110e71;
-    --color-primary-hover: #1d4ed8;
-    --color-secondary: #6b7280;
-    --color-success: #10b981;
-    --color-warning: #f59e0b;
-    --color-danger: #ef4444;
-    --color-info: #3b82f6;
-    /* Цвета фона */
-    --color-bg-primary: #0e798e;
-    --color-bg-secondary: #1090aa;
-    --color-bg-tertiary: #f3f4f6;
-    --color-bg-dark: #042127;
+    /* ===== ОСНОВНЫЕ ЦВЕТА ===== */
+    --color-primary: #0e798e;
+    --color-primary-hover: #0a5c6d;
 
-    --color-text-primary: #d7dcdd;
-    --color-text-primary-hv: #e6f4f7;
-    --color-text-on-primary: #1f2324;
+    /* ===== АКЦЕНТНЫЕ ЦВЕТА (только для элементов, не для текста на цветном фоне!) ===== */
+    --color-secondary: #e88c6d; /* Мягкий коралловый (тёплый акцент) */
+    --color-success: #2d9c7c; /* Спокойная мята */
+    --color-warning: #e6a157; /* Тёплый оранжевый */
+    --color-danger: #d96666; /* Приглушённый красный */
+    --color-info: #5ba8c4; /* Небесно-голубой */
+
+    /* ===== ЦВЕТА ФОНА (иерархия от тёмного к светлому) ===== */
+    --color-bg-dark: #042127; /* Самый тёмный */
+    --color-bg-primary: #0e798e; /* Основной акцентный фон */
+    --color-bg-secondary: #eef2f5; /* СВЕТЛО-серый с оттенком (вместо #1090aa) */
+    --color-bg-tertiary: #ffffff; /* Белый */
+
+    /* ===== ЦВЕТА ТЕКСТА (универсальные) ===== */
+    --color-text-dark: #1a2a2e; /* Тёмный текст для светлого фона */
+    --color-text-light: #e6f4f7; /* Светлый текст для тёмного фона */
+    --color-text-muted: #7a8a8e; /* Приглушённый для второстепенного текста */
+    --color-text-on-primary: #ffffff; /* Белый текст на --color-bg-primary */
 
     /* Отступы */
 
@@ -49,7 +55,14 @@
 ul {
     list-style: none;
 }
-
+a {
+    text-decoration: none;
+    color: var(--color-text-dark);
+    font-size: 20px;
+}
+a:hover {
+    color: var(--color-secondary);
+}
 h1 {
     margin-bottom: var(--space-md);
 }
@@ -64,7 +77,12 @@ h3 {
 
 h1,
 h2 {
+    color: var(--color-text-dark);
     text-align: center;
+}
+
+code {
+    font-weight: 700;
 }
 
 .container {
@@ -94,18 +112,16 @@ body {
 }
 
 .header__nav {
-    border: 1px solid #000;
     ul {
         display: flex;
 
         gap: 24px;
         a {
-            color: var(--color-text-primary);
+            color: var(--color-text-light);
             transition: all cubic-bezier(0.755, 0.05, 0.855, 0.06);
-            text-decoration: none;
         }
         a:hover {
-            color: var(--color-text-primary-hv);
+            color: var(--color-text-muted);
         }
     }
 }
