@@ -12,15 +12,3 @@
 // Если статус доставки экспресс, стоимость - 1500 рублей.
 // Если статус доставки обычная, стоимость - 800 рублей.
 // Если статус доставки не экспресс и не обычная, выведите "Некорректный статус доставки".
-
-const productWeight = document.getElementById("task03_UserDataWeight");
-
-//
-const deliveryStatus = document.getElementById("test");
-
-const task03Btn = document.getElementById("task03_btnPrices");
-
-task03Btn.addEventListener("click", () => {
-    console.log(productWeight.value);
-    console.log(typeof productWeight);
-});

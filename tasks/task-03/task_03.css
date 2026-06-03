@@ -3,3 +3,12 @@
 .task-03__btn-wrap {
     margin-top: 50px;
 }
+
+.task__03-description {
+    padding: 24px;
+    margin-top: var(--space-xxl);
+    margin-bottom: var(--space-xxl);
+    background-color: var(--color-bg-secondary);
+    color: var(--color-text-dark);
+    border-radius: var(--space-sm);
+}

@@ -22,12 +22,33 @@
             <div class="container">
                 <div class="container__wrapper">
                     <h1>task_03_title_h1</h1>
-                    <p>Создайте программу для оценки стоимости доставки товара</p>
+                    <h3>Создайте программу для оценки стоимости доставки товара в зависимости от его веса и статуса доставки.</h3>
+                    <div class="task__03-description">
+                        <p>Запросите от пользователя вес товара и статус доставки (обычная или экспресс).</p>
+                        <p>Используя вложенные условные операторы, выведите стоимость доставки в зависимости от введенных данных:</p>
+                        <ul>
+                            <li>Если вес товара меньше или равен 5 кг:</li>
+                            <li>Если статус доставки экспресс, стоимость - 1000 рублей.</li>
+                            <li>Если статус доставки обычная, стоимость - 500 рублей.</li>
+                            <li>Если статус доставки не экспресс и не обычная, выведите "Некорректный статус доставки".</li>
+                            <li>Если вес товара больше 5 кг:</li>
+                            <li>Если статус доставки экспресс, стоимость - 1500 рублей.</li>
+                            <li>Если статус доставки обычная, стоимость - 800 рублей.</li>
+                            <li>Если статус доставки не экспресс и не обычная, выведите "Некорректный статус доставки".</li>
+                        </ul>
+                    </div>
                 </div>
                 <div class="container__wrapper">
                     <div class="task-03__form-group">
                         <label for="task03_UserDataWeight">Введите вес товара</label>
-                        <input id="task03_UserDataWeight" />
+                        <input type="text" id="task03_UserDataWeight" />
+                    </div>
+                    <div class="task-03__form-group">
+                        <label for="task03_UserDataStatus" name="">Введите статус товара</label>
+                        <select name="options" id="task03_UserDataStatus">
+                            <option value="express">экспресс</option>
+                            <option value="regular">обычная</option>
+                        </select>
                     </div>
                     <div class="task-03__btn-wrap">
                         <button class="button" id="task03_btnPrices">Расчитать стоимость</button>
@@ -42,5 +63,38 @@
             </div>
         </div>
         <script src="./task_03.js"></script>
+        <script>
+            // определяем переменную для веса
+            let productWeight;
+
+            let deliveryStatus;
+
+            // функция работы с весом
+            const task03_FnProductWeight = () => {
+                // находим окно ввода веса и конвертируем строку в число
+                productWeight = Number(document.getElementById("task03_UserDataWeight").value);
+                if (productWeight > 0) {
+                    console.log(`Вес посылки составляет ${productWeight} кг`);
+                } else {
+                    console.log("Вес посылки не может выть отрицательным числом");
+                }
+            };
+
+            // функция работы с весом
+            const task03_FnDeliveryStatus = () => {
+                // находим окно ввода статуса
+                deliveryStatus = document.getElementById("task03_UserDataStatus").value;
+                console.log(`Статус посылки ${deliveryStatus}`);
+            };
+
+            // Функция валидности и стоимости доставки
+
+            const task03Btn = document.getElementById("task03_btnPrices");
+
+            task03Btn.addEventListener("click", () => {
+                task03_FnProductWeight();
+                task03_FnDeliveryStatus();
+            });
+        </script>
     </body>
 </html>
