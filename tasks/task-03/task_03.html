@@ -75,8 +75,12 @@
                 productWeight = Number(document.getElementById("task03_UserDataWeight").value);
                 if (productWeight > 0) {
                     console.log(`Вес посылки составляет ${productWeight} кг`);
-                } else {
+                } else if (productWeight < 0) {
                     console.log("Вес посылки не может выть отрицательным числом");
+                } else if (productWeight == 0) {
+                    console.log("Вес посылки не может выть 0");
+                } else {
+                    console.log("Введите вес посылки");
                 }
             };
 
