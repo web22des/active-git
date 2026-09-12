@@ -29,6 +29,7 @@
                     <li class="item">Правка от 08/09/2026</li>
                     <li class="item">Правка от 09/09/2026</li>
                     <li class="item">Правка от 10/09/2026</li>
+                    <li class="item">Правка от 12/09/2026</li>
                 </ol>
                 <h1>David_01</h1>
 
@@ -42,10 +43,10 @@
         </div>
         <script>
             let x;
-            x = [[1], [2]];
-            console.log(x);
-            x = [4, 6];
-            console.log(x);
+            x = [1, "2", undefined];
+            x[0] = 4;
+            x[8] = "hello";
+            console.log(typeof x[8], x[8]);
         </script>
     </body>
 </html>
