@@ -32,6 +32,7 @@
                     <li class="item">Правка от 12/09/2026</li>
                     <li class="item">Правка от 13/09/2026</li>
                     <li class="item">Правка от 14/09/2026</li>
+                    <li class="item">Правка от 15/09/2026</li>
                 </ol>
                 <h1>David_01</h1>
 
@@ -44,11 +45,14 @@
             </div>
         </div>
         <script>
-            let x;
-            x = [1, "2", undefined];
-            x[0] = 4;
-            x[8] = "hello";
-            console.log(typeof x[8], x[8]);
+            "use strict";
+            let sum = 0;
+            console.log(sum);
+            for (let i = 1; i < 5; i++) {
+                sum = sum + i;
+                console.log(i);
+            }
+            console.log(sum);
         </script>
     </body>
 </html>
